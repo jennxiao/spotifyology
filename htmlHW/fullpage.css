@@ -1,0 +1,311 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Roboto+Mono:400");
+* {
+  box-sizing: border-box;
+}
+.border-class-1 {
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+.robotomono-normal-black-12px {
+  color: black;
+  font-family: "Roboto Mono", Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+.robotomono-normal-black-16px {
+  color: black;
+  font-family: "Roboto Mono", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.robotomono-normal-black-18px {
+  color: black;
+  font-family: "Roboto Mono", Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.robotomono-normal-black-32px {
+  color: black;
+  font-family: "Roboto Mono", Helvetica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+}
+.robotomono-normal-black-36px {
+  color: black;
+  font-family: "Roboto Mono", Helvetica;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+}
+.robotomono-normal-black-48px {
+  color: black;
+  font-family: "Roboto Mono", Helvetica;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+}
+.robotomono-normal-white-48px {
+  color: transparent;
+  font-family: "Roboto Mono", Helvetica;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+}
+.top-tracks {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 2920px;
+  width: 1440px;
+}
+.top-tracks .arrow-down {
+  align-items: flex-end;
+  display: flex;
+  height: 127px;
+  margin-right: 39px;
+  margin-top: 53px;
+  min-width: 127px;
+  padding: 57px 25.2px;
+  transform: rotate(90deg);
+}
+.top-tracks .auto-flex {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 55px;
+  margin-top: 1px;
+  min-height: 75px;
+  width: 841px;
+}
+.top-tracks .group-11 {
+  height: 127px;
+  margin-right: 148px;
+  margin-top: 87px;
+  position: relative;
+  width: 1046px;
+}
+.top-tracks .header-5 {
+  align-items: center;
+  display: flex;
+  height: 90px;
+  justify-content: flex-end;
+  min-width: 1440px;
+  padding: 22px 97px;
+}
+.top-tracks .home-filled {
+  align-items: flex-end;
+  display: flex;
+  margin-bottom: 1px;
+  margin-left: 883px;
+  overflow: hidden;
+  padding: 0 2px;
+  width: 31px;
+}
+.top-tracks .iconuser {
+  align-items: center;
+  display: flex;
+  height: 42px;
+  margin-left: 35px;
+  min-width: 42px;
+  padding: 0 3px;
+}
+.top-tracks .last-6-monthsaa {
+  left: 586px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-decoration: underline;
+  top: 37px;
+}
+.top-tracks .le-festin-camille {
+  letter-spacing: 0px;
+  min-height: 51px;
+  width: 841px;
+}
+.top-tracks .oval {
+  height: 36px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 36px;
+}
+.top-tracks .oval-1 {
+  height: 13px;
+  margin-left: 18px;
+  transform: rotate(-90deg);
+  width: 13px;
+}
+.top-tracks .oval-2 {
+  height: 13px;
+  transform: rotate(-90deg);
+  width: 13px;
+}
+.top-tracks .overlap-group {
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  margin-right: 578px;
+  margin-top: 64px;
+  min-height: 282px;
+  padding: 13px 28px;
+  width: 282px;
+}
+.top-tracks .overlap-group1 {
+  height: 36px;
+  position: relative;
+  width: 36px;
+}
+.top-tracks .overlap-group2 {
+  height: 101px;
+  left: 15px;
+  position: absolute;
+  top: 26px;
+  width: 1021px;
+}
+.top-tracks .path-3 {
+  height: 18px;
+  left: 978px;
+  position: absolute;
+  top: 63px;
+  width: 34px;
+}
+.top-tracks .path-4 {
+  height: 25px;
+  left: 6px;
+  position: absolute;
+  top: 7px;
+  width: 24px;
+}
+.top-tracks .rank {
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  height: 140px;
+  margin-left: 30px;
+  margin-top: 101px;
+  min-width: 1224px;
+  padding: 0 41px;
+}
+.top-tracks .rank-1 {
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  height: 140px;
+  margin-left: 30px;
+  margin-top: 67px;
+  min-width: 1224px;
+  padding: 0 41px;
+}
+.top-tracks .rank-2 {
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  height: 140px;
+  margin-left: 56px;
+  margin-top: 109px;
+  min-width: 1224px;
+  padding: 0 41px;
+}
+.top-tracks .ratatouille-origina {
+  letter-spacing: 0px;
+  min-height: 24px;
+  width: 786px;
+}
+.top-tracks .rectangle-13 {
+  background-color: white;
+  border-radius: 8px;
+  height: 102px;
+  margin-left: 22px;
+  width: 122px;
+}
+.top-tracks .span {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Roboto Mono", Helvetica;
+  font-size: 48px;
+}
+.top-tracks .span0-1 {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Roboto Mono", Helvetica;
+  font-size: 36px;
+}
+.top-tracks .surname {
+  letter-spacing: 0px;
+  min-height: 51px;
+  width: 841px;
+}
+.top-tracks .text-1 {
+  align-self: flex-start;
+  letter-spacing: 0px;
+  min-height: 43px;
+  min-width: 233px;
+  text-align: center;
+}
+.top-tracks .text-2 {
+  letter-spacing: 0px;
+  min-height: 24px;
+  width: 786px;
+}
+.top-tracks .text-3 {
+  letter-spacing: 0px;
+  margin-bottom: 14px;
+  min-height: 64px;
+  text-align: center;
+  width: 90px;
+}
+.top-tracks .text-4 {
+  letter-spacing: 0px;
+  min-height: 24px;
+  width: 786px;
+}
+.top-tracks .text-5 {
+  left: 0px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 0px;
+}
+.top-tracks .text-6 {
+  letter-spacing: 0px;
+  margin-left: 59px;
+  margin-top: 168px;
+  min-height: 175px;
+  width: 1225px;
+}
+.top-tracks .text-7 {
+  letter-spacing: 0px;
+  margin-top: 172px;
+  min-height: 60px;
+  width: 215px;
+}
+.top-tracks .vector {
+  height: 31px;
+  margin-bottom: -0px;
+  width: 27px;
+}
+.top-tracks .x2-i7519754 {
+  letter-spacing: 0px;
+  margin-bottom: 14px;
+  min-height: 64px;
+  text-align: center;
+  width: 90px;
+}
+.top-tracks .x2-i7527754 {
+  letter-spacing: 0px;
+  margin-bottom: 14px;
+  min-height: 64px;
+  text-align: center;
+  width: 90px;
+}
+.top-tracks .your-name {
+  letter-spacing: 0px;
+  min-height: 16px;
+}
