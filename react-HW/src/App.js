@@ -6,8 +6,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-        <Clock></Clock>
+        <Clock name={"Jenn's SUPER DUPER COOL CLOCK"}></Clock>
+        <Clock name={"SECOND CLOCK"}></Clock>
     </div>
   );
 }
+
 export default App;

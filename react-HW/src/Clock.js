@@ -19,20 +19,22 @@ class Clock extends React.Component {
     constructor(props) {
         super(props); 
         this.state = {
+            staticdate: "November 1",
             date: new Date(),
-            staticdate: "May 21st",
+            clockName: props.name,
         }
     }
     render () {
         return (
               <div>
-                <h1 className={this.exampleStyle}> This is some styled text </h1>
-                <h1 className={"redText"}> This is some red text </h1>
                 <h1 
                   style = {{
                     color: "lightblue"
-                  }}> This is some blue text
+                  }}> {this.state.clockName}
                 </h1>
+                <h1 className={this.exampleStyle}> This is some styled text </h1>
+                <h1 className={"redText"}> This is some red text </h1>
+                
                 <h2> This is a date object that changes over time: {this.state.date.toLocaleTimeString()} </h2>
                 <h2> this is the static date: {this.state.staticdate} </h2>
                 <img src={image}/>
