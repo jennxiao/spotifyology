@@ -9,14 +9,18 @@ class KeywordButton extends React.Component {
         background-color: #393939;
         border-radius: 15pt;
         text-align: left;
+        padding-left: 35px;
+        width: 39%;
+        word-wrap: break-word;
     `;
     keyword = css`
         flex-flow: row;
         font-size: 50px;
         font-family: "Montserrat", sans-serif;
-        font-weight: bold;
+        font-weight: 700;
         
-        background-image: ${this.state.colorScheme};
+        background-color: red;
+        background-image: linear-gradient(180deg, #FD0000, #FFA360);
         background-size: 100%;
         background-repeat: repeat;
 
@@ -24,6 +28,8 @@ class KeywordButton extends React.Component {
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent; 
         -moz-text-fill-color: transparent;
+
+        padding-top: 18px;
     `;
     description = css`
         flex-flow: row;
@@ -32,6 +38,18 @@ class KeywordButton extends React.Component {
         font-style: normal;
         font-weight: 600;
         color: #B4B4B4;
+
+        padding-top: 15pt;
+        padding-bottom: 18pt;
+        padding-right: 75pt;
+    `;
+    keywordTag = css`
+        display: flex;
+        flex-flow: column;
+        background-color: #E35F5F;
+        border-radius: 0px 14px 14px 0px;
+        height: 200px;
+        width: 50px;
     `;
 
     constructor(props) {
@@ -42,8 +60,6 @@ class KeywordButton extends React.Component {
             colorScheme: props.colorScheme,
             colorTag: props.colorTag
         };
-        this.keyword = this.keyword.bind(this);
-        this.colorScheme = this.colorScheme.bind(this);
     }
 
     render() {
@@ -56,8 +72,10 @@ class KeywordButton extends React.Component {
                     <div className={this.description}>
                         {this.state.description}
                     </div>
-                </div>    
-            </button>
+                </div>
+                <div className={this.keywordTag}>
+                </div>
+            </button> 
         )
     }
 }
