@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 // import { css } from 'emotion';
 import RankedSong from './RankedSong';
+import SpotifyAuthorization from './SpotifyAuthorization';
 import image from './album.jpeg';
 import '../../index.css';
 
@@ -18,6 +19,7 @@ class Jennifer extends React.Component {
     render() {
         return (
             <body>
+                <SpotifyAuthorization/>
                 <RankedSong
                     rank = "1"
                     image = {image}

@@ -15,7 +15,7 @@ class David extends React.Component {
             <KeywordButton
                 keyword = "Upbeat"
                 description = "Cheerful, exciting music to listen to when you’re feeling down or you just want to turn up"
-                colorScheme = "linear-gradient(180deg, #FD0000, #FFA360)"
+                colorScheme = 'blue'
                 colorTag = ""
             />
         </body>

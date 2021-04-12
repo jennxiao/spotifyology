@@ -2,16 +2,8 @@ import React, {useRef} from "react"
 import { NavLink } from 'react-router-dom';
 import { buildPageSpacing, spacing, fontStyles, colors } from '../styles/index.tsx';
 import { css } from 'emotion';
-// import RobotoMono from 'typeface-roboto-mono'
-// import useDimensions from "react-cool-dimensions";
- 
+
 function NavigationBar() {
-  // const ref = useRef();
-  // const { width, height, entry, unobserve, observe } = useDimensions(ref, {
-  //     onResize: ({ width, height, entry, unobserve, observe }) => {
-  //       // Triggered whenever the size of the target is changed
-  //     },
-  //   });
 
     const styles = {
         navigationBar: css`
@@ -58,7 +50,7 @@ function NavigationBar() {
   return (
     <div className={styles.navigationBar}>
       <div className={styles.headingStyle}>
-        <NavLink style={{color: colors.black}}  className={styles.link} activeClassName={styles.activeLink} to="/" >  Spotifyology </NavLink>
+        <NavLink style={{color: colors.white}}  className={styles.link} activeClassName={styles.activeLink} to="/home" >  Spotifyology </NavLink>
       </div>
       <div className={styles.right}>      
         <NavLink style={{color: colors.white}} className={styles.link} activeClassName={styles.activeLink} to="/Jennifer" > Jennifer </NavLink>
