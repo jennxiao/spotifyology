@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { NavLink } from 'react-router-dom';
-import playlistSongComponent from "./tiff_playlist"
-import { css } from 'emotion';
+// import playlistSongComponent from "./tiff_playlist";
+import Test from './Test';
 
 
 
@@ -12,13 +12,13 @@ class Tiffanie extends React.Component {
 
     render() {
         return (
-        <body>
-            <playlistSongComponent
-              letter= "I"
-              title= "If the World was Ending"
-              artist= "JP Saxe, Julia Michaels"
+        <div>
+            <Test
+                letter= "I"
+                title= "If the World was Ending"
+                artist= "JP Saxe, Julia Michaels"
             />
-        </body>
+        </div>
         );
     }
   }
