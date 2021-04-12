@@ -34,7 +34,6 @@ class Jennifer extends React.Component {
     render() {
         return (
             <body>
-                <SpotifyAuthorization/>
                 <RankedSong
                     rank = "1"
                     image = {image}
