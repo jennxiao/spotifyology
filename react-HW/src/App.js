@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import React from 'react';
-import Clock from './Clock';
 import './App.css';
+
+import Clock from './Clock';
 
 function App() {
   return (

@@ -23,12 +23,10 @@ class KeywordButton extends React.Component {
         background-image: linear-gradient(180deg, #FD0000, #FFA360);
         background-size: 100%;
         background-repeat: repeat;
-
         -webkit-background-clip: text;
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent; 
         -moz-text-fill-color: transparent;
-
         padding-top: 18px;
     `;
     description = css`
@@ -38,7 +36,6 @@ class KeywordButton extends React.Component {
         font-style: normal;
         font-weight: 600;
         color: #B4B4B4;
-
         padding-top: 15pt;
         padding-bottom: 18pt;
         padding-right: 75pt;
