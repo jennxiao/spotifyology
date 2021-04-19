@@ -8,6 +8,8 @@ body {
   padding-top: 64px;
   margin: 24px;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 div {
   font-family: 'Open Sans', sans-serif;
