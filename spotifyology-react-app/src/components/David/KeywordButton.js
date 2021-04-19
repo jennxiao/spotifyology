@@ -21,6 +21,7 @@ class KeywordButton extends React.Component {
         width: 100%;
     `
     keyword = css`
+<<<<<<< HEAD
         &-upbeat {
             font-size: 300%;
             font-family: "Montserrat", sans-serif;
@@ -95,6 +96,7 @@ class KeywordButton extends React.Component {
         padding-top: 2%;
         padding-bottom: 7.5%;
     `
+
     keywordTag = css`
         &-upbeat {
             display: flex;

@@ -57,7 +57,7 @@ class RankedSong extends React.Component {
                     {this.state.rank}
                 </div>
                 <div className={this.albumArt}>
-                    <img className={this.albumArt} src={image}/>
+                    <img className={this.albumArt} src={this.state.albumArt}/>
                 </div>
                 <div className={this.songDetailsColumn}>
                     <div className={this.songArtistRow}>
