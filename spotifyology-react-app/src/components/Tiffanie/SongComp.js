@@ -7,12 +7,12 @@ class SongComp extends React.Component {
     playlistSongComponent = css`
     display: flex;
     width: 60%;
-    height: 30px;
-    text-align: left;
+    text-align: right;
     vertical-align: middle;
-    align-items: right;
+    align-items: center;
     background-color: ${colors.white};
-    border-radius: 25px;
+    padding: 20px;
+    font-size: 17px
     `;
     songDetailsColumn =  css`
         flex-flow: column;
@@ -21,6 +21,7 @@ class SongComp extends React.Component {
         width: 10%;
         vertical-align: middle;
         text-align: center;
+        font-weight: bold;
     `;
 
 
@@ -40,7 +41,7 @@ class SongComp extends React.Component {
                     {this.state.letter}
                   </div>
                   <div className={this.songDetailsColmun}>
-                    {this.state.title} :: {this.state.artist}
+                    {this.state.title} -- {this.state.artist}
                   </div>
                 </div>
              );
