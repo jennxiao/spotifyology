@@ -59,11 +59,7 @@ function NavigationBar() {
         <NavLink style={{color: colors.white}} className={styles.link} activeClassName={styles.activeLink} to="/Jasmine" > Jasmine </NavLink>
         <NavLink style={{color: colors.white}} className={styles.link} activeClassName={styles.activeLink} to="/Sady" > Sady </NavLink>
         <NavLink style={{color: colors.white}} className={styles.link} activeClassName={styles.activeLink} to="/Tiffanie" > Tiffanie </NavLink>
-<<<<<<< HEAD
         <NavLink style={{color: colors.white}} className={styles.link} activeClassName={styles.activeLink} to="/Tiffany" > Tiffany </NavLink>
-=======
-        <NavLink style={{color: colors.white}} className={styles.link} activeClassName={styles.activeLink} to="/Tifanny" > Tiffany </NavLink>
->>>>>>> 9c5002009413682905b5c83aaaacad2223b34e5c
       </div>
     </div>
   )
