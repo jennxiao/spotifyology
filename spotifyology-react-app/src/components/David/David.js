@@ -8,16 +8,17 @@ class David extends React.Component {
     background = css`
         background-image: linear-gradient(180deg, #212121, #21444B);
 
+        background-size: 100% 100%;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: 100% 100%;
-        object-fit: cover;
 
         display: flex;
         flex-direction: column;
         align-items: center;
 
+        height: 1000px;
+        width: 100%;
     `
     title = css`
         display: flex;
