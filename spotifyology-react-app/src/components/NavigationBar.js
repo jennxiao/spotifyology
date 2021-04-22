@@ -26,6 +26,7 @@ function NavigationBar() {
             <Nav.Link href="/Jasmine"> Jasmine </Nav.Link>
             <Nav.Link href="/Tiffanie"> Tiffanie </Nav.Link>
             <Nav.Link href="/Tiffany"> Tiffany </Nav.Link>
+            <Nav.Link href="/Tiffany"> Sady </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
