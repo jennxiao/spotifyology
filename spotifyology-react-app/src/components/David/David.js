@@ -4,6 +4,9 @@ import background_image from './background-default.png';
 import spotify_logo from './spotify-logo.png';
 import KeywordButton from './KeywordButton';
 
+import SpotifyWebApi from 'spotify-web-api-js';
+const spotifyApi = new SpotifyWebApi();
+
 
 class David extends React.Component {
     background = css`
@@ -99,19 +102,73 @@ class David extends React.Component {
 
     constructor(props) {
         super(props); 
+        const params = this.getHashParams();
+        const token = params.access_token;
+        if (token) {
+            spotifyApi.setAccessToken(token);
+        }
+        this.state = {
+            loggedIn: token ? true : false,
+            token: "",
+        }
     }
 
     render() {
-        return (
-        <body className={this.background} style={{ backgroundImage: `url(${background_image})` }}>
-            <div className={this.title}>
-                <p className={this.welcome}>Welcome to</p>
-                <p className={`${this.welcome}-keywordify`}>Keywordify</p>
-            </div>
-            <p className={this.welcomeSub}>Your Personal Playlist Generator</p>
-            <button className={this.spotifyConnect}><img className={this.spotifyLogo} src={spotify_logo} /><p className={this.spotifyText}>LOGIN WITH SPOTIFY</p></button>
-        </body>
-        );
+        return this.state.loggedIn ? 
+            (
+                <div className={this.background} style={{ backgroundImage: `url(${background_image})` }}> 
+                    <p className={this.welcomeSub}> You're in </p>
+                </div>
+            ) 
+            :
+            (
+            <body className={this.background} style={{ backgroundImage: `url(${background_image})` }}>
+                <div className={this.title}>
+                    <p className={this.welcome}>Welcome to</p>
+                    <p className={`${this.welcome}-keywordify`}>Keywordify</p>
+                </div>
+                <p className={this.welcomeSub}>Your Personal Playlist Generator</p>
+                <button onClick={this.logIn} 
+                    className={this.spotifyConnect}><img className={this.spotifyLogo} 
+                    src={spotify_logo} />
+                        <p className={this.spotifyText}>LOGIN WITH SPOTIFY</p>
+                </button>
+            </body>
+            );
+    }
+
+    logIn() {
+        window.location.href =
+            'https://accounts.spotify.com/authorize?client_id=91cbde34750a44d586b75afd41fc09b3&scope=playlist-read-private%20playlist-read-collaborative%20playlist-modify-public%20user-read-recently-played%20playlist-modify-private%20ugc-image-upload%20user-follow-modify%20user-follow-read%20user-library-read%20user-library-modify%20user-read-private%20user-read-email%20user-top-read%20user-read-playback-state&response_type=token&redirect_uri=http://localhost:3000/David/';
+    }
+
+    componentDidMount() {
+        let hashParams = {};
+        let e,
+          r = /([^&;=]+)=?([^&;]*)/g,
+          q = window.location.hash.substring(1);
+        while ((e = r.exec(q))) {
+          hashParams[e[1]] = decodeURIComponent(e[2]);
+        }
+    
+        if (!hashParams.access_token) {
+          this.setState({loggedIn : false})
+        } else {
+            this.setState({token : hashParams.access_token})
+            spotifyApi.setAccessToken(this.state.token);
+        }
+    }
+
+    getHashParams() {
+        var hashParams = {};
+        var e, r = /([^&;=]+)=?([^&;]*)/g,
+            q = window.location.hash.substring(1);
+        e = r.exec(q)
+        while (e) {
+           hashParams[e[1]] = decodeURIComponent(e[2]);
+           e = r.exec(q);
+        }
+        return hashParams;
     }
   }
   
