@@ -1,0 +1,91 @@
+
+div#second {
+    display: flex;
+    margin-left: 80px;
+    margin-right: 50px;
+    min-height: 15%;
+    max-height: 35%
+  
+  }
+  
+  
+  p {
+    font-family: 'Calistoga';
+    font-size: 25px;
+  }
+  
+  h2 {
+    text-align: right;
+    font-family: 'Calistoga';
+    font-size: 35px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px  0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    max-width: 80%;
+    margin: auto;
+    text-align: left;
+    font-family: arial;
+    display: flex;
+    margin-top: 5%;
+    border-radius: 50px;
+  }
+  
+  .cbg {
+    background-color:#003262;
+    min-height: 50%;
+  }
+  
+  .post-container {
+    padding-left: 10em;
+    padding-right: 10em; 
+    padding-top: 2em;
+    background-color: #92CCA6;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .right {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    margin-left: 20%;
+    
+  }
+  
+  .titlee {
+    color: #1DB954;
+  }
+  
+  h6 {
+    margin: none;
+    color: #1DB954;
+    font-family: 'Calistoga';
+    font-size: 25px; 
+    padding: 0;
+  
+  }
+  
+  #grayed {
+    color: #B6B8BA;
+  }
+  
+  #blue {
+    color: #1DB954;
+    font-weight: bold;
+  }
+  
+  #votes {
+    margin: none;
+    padding: none;
+  
+  }
+  
+  
